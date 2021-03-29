@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "arcanaflavor:pumpkin_slice"
+  },
+  "result": "arcanaflavor:cooked_pumpkin_slice",
+  "experience": 0.35,
+  "cookingtime": 200
+}
