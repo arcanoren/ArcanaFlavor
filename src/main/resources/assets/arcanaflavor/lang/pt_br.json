@@ -4,5 +4,14 @@
   "item.arcanaflavor.cooked_apple": "Maçã assada",
   "item.arcanaflavor.cooked_beetroot": "Beterraba assada",
   "item.arcanaflavor.cooked_carrot": "Cenoura assada",
-  "item.arcanaflavor.cooked_pumpkin_slice": "Abóbora assada"
+  "item.arcanaflavor.cooked_pumpkin_slice": "Abóbora assada",
+
+  "item.arcanaflavor.apple_pie": "Torta de maçã",
+  "item.arcanaflavor.beetroot_pie": "Torta de beterraba",
+  "item.arcanaflavor.chicken_pie": "Torta de frango",
+  "item.arcanaflavor.codfish_pie": "Torta de atum",
+  "item.arcanaflavor.mushroom_pie": "Torta de cogumelo",
+  "item.arcanaflavor.sweet_berry_pie": "Torta de Frutas Silvestres",
+  "item.arcanaflavor.vegetable_pie": "Torta de Legumes",
+  "item.arcanaflavor.wart_pie": "Torta de Fungo"
 }

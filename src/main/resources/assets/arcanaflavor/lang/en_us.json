@@ -4,5 +4,14 @@
   "item.arcanaflavor.cooked_apple": "Cooked Apple",
   "item.arcanaflavor.cooked_beetroot": "Cooked Beetroot",
   "item.arcanaflavor.cooked_carrot": "Cooked Carrot",
-  "item.arcanaflavor.cooked_pumpkin_slice": "Cooked Pumpkin Slice"
+  "item.arcanaflavor.cooked_pumpkin_slice": "Cooked Pumpkin Slice",
+
+  "item.arcanaflavor.apple_pie": "Apple Pie",
+  "item.arcanaflavor.beetroot_pie": "Beetroot Pie",
+  "item.arcanaflavor.chicken_pie": "Chicken Pie",
+  "item.arcanaflavor.codfish_pie": "Codfish Pie",
+  "item.arcanaflavor.mushroom_pie": "Mushroom Pie",
+  "item.arcanaflavor.sweet_berry_pie": "Sweet Berry Pie",
+  "item.arcanaflavor.vegetable_pie": "Vegetable Pie",
+  "item.arcanaflavor.wart_pie": "Wart Pie"
 }
