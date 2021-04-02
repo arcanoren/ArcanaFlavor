@@ -2,10 +2,18 @@ package net.arcano.arcanaflavor.registry;
 
 import net.arcano.arcanaflavor.ArcanaFlavor;
 import net.arcano.arcanaflavor.items.AFFood;
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class AFItems {
+
+    //Block Items Init
+    public static final BlockItem COOKING_CAULDRON = new BlockItem(AFBlocks.COOKING_CAULDRON, new Item.Settings().group(ItemGroup.DECORATIONS));
+
     public static void registerItems(){
 
         /* *Foods* */
@@ -28,5 +36,13 @@ public class AFItems {
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "sweet_berry_pie"), AFFood.SWEET_BERRY_PIE);
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "vegetable_pie"), AFFood.VEGETABLE_PIE);
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "wart_pie"), AFFood.WART_PIE);
+
+        //Cookies
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "berry_cookie"), AFFood.BERRY_COOKIE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "chocolate_cookie"), AFFood.CHOCOLATE_COOKIE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "honey_cookie"), AFFood.HONEY_COOKIE);
+
+        /* *Block Items* */
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "cooking_cauldron"), COOKING_CAULDRON);
     }
 }

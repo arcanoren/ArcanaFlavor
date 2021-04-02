@@ -13,5 +13,11 @@
   "item.arcanaflavor.mushroom_pie": "Mushroom Pie",
   "item.arcanaflavor.sweet_berry_pie": "Sweet Berry Pie",
   "item.arcanaflavor.vegetable_pie": "Vegetable Pie",
-  "item.arcanaflavor.wart_pie": "Wart Pie"
+  "item.arcanaflavor.wart_pie": "Wart Pie",
+
+  "item.arcanaflavor.berry_cookie": "Berry Cookie",
+  "item.arcanaflavor.chocolate_cookie": "Chocolate Cookie",
+  "item.arcanaflavor.honey_cookie": "Honey Cookie",
+
+  "block.arcanaflavor.cooking_cauldron": "Cooking Cauldron"
 }

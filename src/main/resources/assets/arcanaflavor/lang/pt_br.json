@@ -13,5 +13,11 @@
   "item.arcanaflavor.mushroom_pie": "Torta de cogumelo",
   "item.arcanaflavor.sweet_berry_pie": "Torta de Frutas Silvestres",
   "item.arcanaflavor.vegetable_pie": "Torta de Legumes",
-  "item.arcanaflavor.wart_pie": "Torta de Fungo"
+  "item.arcanaflavor.wart_pie": "Torta de Fungo",
+
+  "item.arcanaflavor.berry_cookie": "Biscoito de frutinhas",
+  "item.arcanaflavor.chocolate_cookie": "Biscoito de chocolate",
+  "item.arcanaflavor.honey_cookie": "Biscoito de mel",
+
+  "block.arcanaflavor.cooking_cauldron": "Caldeirão de Cozinha"
 }

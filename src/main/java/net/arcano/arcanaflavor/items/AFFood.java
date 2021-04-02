@@ -37,4 +37,12 @@ public class AFFood {
     public static final Item WART_PIE = new Item(new Item.Settings().group(ItemGroup.FOOD)
             .food(new FoodComponent.Builder().hunger(8).saturationModifier(4.8F).build()));
 
+    //Cookies
+    public static final Item BERRY_COOKIE = new Item(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build()));
+    public static final Item CHOCOLATE_COOKIE = new Item(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build()));
+    public static final Item HONEY_COOKIE = new Item(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build()));
+
 }
