@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RR",
+    "RR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:beef"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:ground_meat",
+    "count": 4
+  }
+}

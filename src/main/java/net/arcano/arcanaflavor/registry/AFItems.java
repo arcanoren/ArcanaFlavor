@@ -42,6 +42,32 @@ public class AFItems {
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "chocolate_cookie"), AFFood.CHOCOLATE_COOKIE);
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "honey_cookie"), AFFood.HONEY_COOKIE);
 
+        //Meat
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "bacon"), AFFood.BACON);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "bbq"), AFFood.BBQ);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "burger"), AFFood.BURGER);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "cooked_meatball"), AFFood.COOKED_MEATBALL);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "grilled_bacon"), AFFood.GRILLED_BACON);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "grilled_burger"), AFFood.GRILLED_BURGER);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "grilled_mutton_burger"), AFFood.GRILLED_MUTTON_BURGER);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "grilled_sausage"), AFFood.GRILLED_SAUSAGE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "ground_meat"), AFFood.GROUND_MEAT);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "ground_mutton"), AFFood.GROUND_MUTTON);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "ground_pork"), AFFood.GROUND_PORK);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "kebab"), AFFood.KEBAB);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "meatball"), AFFood.MEATBALL);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "mixed_bbq"), AFFood.MIXED_BBQ);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "mutton_bbq"), AFFood.MUTTON_BBQ);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "mutton_burger"), AFFood.MUTTON_BURGER);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "pepperoni"), AFFood.PEPPERONI);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "raw_kebab"), AFFood.RAW_KEBAB);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "roasted_salmon"), AFFood.ROASTED_SALMON);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "sashimi"), AFFood.SASHIMI);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "sausage"), AFFood.SAUSAGE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "sausage_bbq"), AFFood.SAUSAGE_BBQ);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "stuffed_chicken"), AFFood.STUFFED_CHICKEN);
+
+
         /* *Block Items* */
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "cooking_cauldron"), COOKING_CAULDRON);
     }

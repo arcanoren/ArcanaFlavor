@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CFB",
+    " K "
+  ],
+  "key": {
+    "C": {
+      "item": "arcanaflavor:cooked_carrot"
+    },
+    "F": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "B": {
+      "item": "minecraft:baked_potato"
+    },
+    "K": {
+      "item": "minecraft:kelp"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:stuffed_chicken"
+  }
+}

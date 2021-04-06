@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SGS"
+  ],
+  "key": {
+    "G": {
+      "item": "arcanaflavor:ground_mutton"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:raw_kebab",
+    "count": 2
+  }
+}
