@@ -4,13 +4,14 @@
   "version": "${version}",
 
   "name": "Arcana Flavor",
-  "description": "Pt-Br:Este mod traz ao Minecraft um novo sabor no modo de cozinhar",
+  "description": "En-Us: This mod make the cooking task more tasty. /nPt-Br:Este mod traz ao Minecraft um novo sabor no modo de cozinhar.",
+
   "authors": [
     "Arcano"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/arcanoren/ArcanaFlavor",
+    "sources": "https://github.com/arcanoren/ArcanaFlavor"
   },
 
   "license": "CC0-1.0",
