@@ -67,6 +67,9 @@ public class AFItems {
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "sausage_bbq"), AFFood.SAUSAGE_BBQ);
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "stuffed_chicken"), AFFood.STUFFED_CHICKEN);
 
+        //Drinks
+        Registry.register(Registry.ITEM,new Identifier(ArcanaFlavor.MOD_ID, "milk_bottle"), AFFood.MILK_BOTTLE);
+
 
         /* *Block Items* */
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "cooking_cauldron"), COOKING_CAULDRON);

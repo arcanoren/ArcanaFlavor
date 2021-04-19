@@ -1,5 +1,8 @@
 package net.arcano.arcanaflavor.items;
 
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -92,5 +95,9 @@ public class AFFood {
             .food(new FoodComponent.Builder().hunger(12).saturationModifier(9).build()));
     public static final Item STUFFED_CHICKEN = new Item(new Item.Settings().group(ItemGroup.FOOD)
             .food(new FoodComponent.Builder().hunger(19).saturationModifier(16.7F).build()));
+
+    //Drinks
+    public static final Item MILK_BOTTLE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(1).build()));
 
 }
