@@ -98,6 +98,22 @@ public class AFFood {
 
     //Drinks
     public static final Item MILK_BOTTLE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(1).build()));
+            .food(new FoodComponent.Builder().hunger(1).saturationModifier(1).alwaysEdible().build()));
+    public static final Item APPLE_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(6).saturationModifier(3).build()));
+    public static final Item BEETROOT_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(3).saturationModifier(2).build()));
+    public static final Item BERRY_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(4).saturationModifier(1).build()));
+    public static final Item CACTUS_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(3).saturationModifier(1).build()));
+    public static final Item CARROT_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(5).saturationModifier(4).build()));
+    public static final Item CHORUS_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(6).saturationModifier(3).alwaysEdible().build()));
+    public static final Item MELON_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(4).saturationModifier(4).build()));
+    public static final Item SEA_PICKLE_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
+            .food(new FoodComponent.Builder().hunger(3).saturationModifier(1).build()));
 
 }

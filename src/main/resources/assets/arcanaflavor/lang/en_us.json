@@ -44,6 +44,17 @@
   "item.arcanaflavor.stuffed_chicken": "Stuffed Chicken",
 
   "item.arcanaflavor.milk_bottle": "Milk Bottle",
+  "item.arcanaflavor.apple_juice": "Apple Juice",
+  "item.arcanaflavor.beetroot_juice": "Beetroot Juice",
+  "item.arcanaflavor.berry_juice": "Sweet Berry Juice",
+  "item.arcanaflavor.cactus_juice": "Cactus Juice",
+  "item.arcanaflavor.carrot_juice": "Carrot Juice",
+  "item.arcanaflavor.chorus_juice": "Chorus Juice",
+  "item.arcanaflavor.melon_juice": "Melon Juice",
+  "item.arcanaflavor.sea_pickle_juice": "Sea Pickle Juice",
+
+  "item.arcanaflavor.egg_carton": "Egg Carton",
+  "block.arcanaflavor.egg_carton_block": "Egg Carton Block",
 
   "block.arcanaflavor.cooking_cauldron": "Cooking Cauldron"
 }

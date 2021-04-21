@@ -44,6 +44,17 @@
   "item.arcanaflavor.stuffed_chicken": "Frango recheado",
 
   "item.arcanaflavor.milk_bottle": "Frasco de Leite",
+  "item.arcanaflavor.apple_juice": "Suco de maçã",
+  "item.arcanaflavor.beetroot_juice": "Suco de beterraba",
+  "item.arcanaflavor.berry_juice": "Suco de frutinhas",
+  "item.arcanaflavor.cactus_juice": "Suco de cacto",
+  "item.arcanaflavor.carrot_juice": "Suco de cenoura",
+  "item.arcanaflavor.chorus_juice": "Suco do coro",
+  "item.arcanaflavor.melon_juice": "Suco de melancia",
+  "item.arcanaflavor.sea_pickle_juice": "Suco de pepino do mar",
+
+  "item.arcanaflavor.egg_carton": "Cartela de ovos",
+  "block.arcanaflavor.egg_carton_block": "Bloco de cartelas de ovos",
 
   "block.arcanaflavor.cooking_cauldron": "Caldeirão de Cozinha"
 }

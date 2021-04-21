@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:egg"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:egg_carton"
+  }
+}

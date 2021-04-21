@@ -2,6 +2,7 @@ package net.arcano.arcanaflavor.registry;
 
 import net.arcano.arcanaflavor.ArcanaFlavor;
 import net.arcano.arcanaflavor.items.AFFood;
+import net.arcano.arcanaflavor.items.AFItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,6 +14,7 @@ public class AFItems {
 
     //Block Items Init
     public static final BlockItem COOKING_CAULDRON = new BlockItem(AFBlocks.COOKING_CAULDRON, new Item.Settings().group(ItemGroup.DECORATIONS));
+    public static final BlockItem EGG_CARTON_BLOCK = new BlockItem(AFBlocks.EGG_CARTON_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS));
 
     public static void registerItems(){
 
@@ -68,10 +70,22 @@ public class AFItems {
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "stuffed_chicken"), AFFood.STUFFED_CHICKEN);
 
         //Drinks
-        Registry.register(Registry.ITEM,new Identifier(ArcanaFlavor.MOD_ID, "milk_bottle"), AFFood.MILK_BOTTLE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "milk_bottle"), AFFood.MILK_BOTTLE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "apple_juice"), AFFood.APPLE_JUICE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "beetroot_juice"), AFFood.BEETROOT_JUICE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "berry_juice"), AFFood.BERRY_JUICE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "cactus_juice"), AFFood.CACTUS_JUICE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "carrot_juice"), AFFood.CARROT_JUICE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "chorus_juice"), AFFood.CHORUS_JUICE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "melon_juice"), AFFood.MELON_JUICE);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "sea_pickle_juice"), AFFood.SEA_PICKLE_JUICE);
+
+        /* *Items* */
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "egg_carton"), AFItem.EGG_CARTON);
 
 
         /* *Block Items* */
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "cooking_cauldron"), COOKING_CAULDRON);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "egg_carton_block"), EGG_CARTON_BLOCK);
     }
 }
