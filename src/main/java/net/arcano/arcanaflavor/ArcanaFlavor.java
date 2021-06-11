@@ -11,14 +11,12 @@ public class ArcanaFlavor implements ModInitializer {
 
     public static final String MOD_ID = "arcanaflavor";
 
-    //public static AFConfig CONFIG;
+    public static AFConfig CONFIG;
 
     @Override
     public void onInitialize() {
         AutoConfig.register(AFConfig.class, GsonConfigSerializer::new);
-        //CONFIG = AutoConfig.getConfigHolder(AFConfig.class).getConfig();
-
-        //CONFIG.parseJson();
+        CONFIG = AutoConfig.getConfigHolder(AFConfig.class).getConfig();
 
         AFItems.registerItems();
         AFBlocks.registerBlocks();

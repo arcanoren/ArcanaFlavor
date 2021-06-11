@@ -20,11 +20,9 @@ import java.util.List;
 
 public class AFItems {
 
-    public static AFConfig CONFIG = AutoConfig.getConfigHolder(AFConfig.class).getConfig();
-
     public static void verifyCustomFoodsRegistry(String name, Item item){
         BaseFood food = new BaseFood();
-        CONFIG.parseJson(name, food);
+        ArcanaFlavor.CONFIG.parseJson(name, food);
 
         if (food.name != null && food.name.contains("_custom")) {
             if(food.name.contains("juice") || food.name.contains("bottle")){
@@ -90,6 +88,7 @@ public class AFItems {
         verifyCustomFoodsRegistry("meatball", AFFood.MEATBALL);
         verifyCustomFoodsRegistry("mixed_bbq", AFFood.MIXED_BBQ);
         verifyCustomFoodsRegistry("mutton_bbq", AFFood.MUTTON_BBQ);
+        verifyCustomFoodsRegistry("mutton_burger", AFFood.MUTTON_BURGER);
         verifyCustomFoodsRegistry("pepperoni", AFFood.PEPPERONI);
         verifyCustomFoodsRegistry("raw_kebab", AFFood.RAW_KEBAB);
         verifyCustomFoodsRegistry("roasted_salmon", AFFood.ROASTED_SALMON);

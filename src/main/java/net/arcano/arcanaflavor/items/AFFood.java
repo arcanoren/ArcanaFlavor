@@ -9,8 +9,12 @@ public class AFFood {
 
 
     private static Item food(int hunger, float saturation){
-
         return new Item(new Item.Settings().group(ItemGroup.FOOD)
+                .food(new FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).build()));
+    }
+
+    private static Item drink(int hunger, float saturation){
+        return new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
                 .food(new FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).build()));
     }
 
@@ -34,79 +38,44 @@ public class AFFood {
     public static final Item WART_PIE = food(8, 4.8F);
 
     //Cookies
-    public static final Item BERRY_COOKIE = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build()));
-    public static final Item CHOCOLATE_COOKIE = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build()));
-    public static final Item HONEY_COOKIE = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build()));
+    public static final Item BERRY_COOKIE = food(2, 0.4F);
+    public static final Item CHOCOLATE_COOKIE = food(2, 0.4F);
+    public static final Item HONEY_COOKIE = food(2, 0.4F);
 
     //Meat
-    public static final Item BACON = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(4).saturationModifier(2).build()));
-    public static final Item BBQ = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(20).saturationModifier(20).build()));
-    public static final Item BURGER = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(1.6F).build()));
-    public static final Item COOKED_MEATBALL = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(1).build()));
-    public static final Item GRILLED_BACON = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(10).saturationModifier(11.5F).build()));
-    public static final Item GRILLED_BURGER = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(7).saturationModifier(10).build()));
-    public static final Item GRILLED_MUTTON_BURGER = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(8).saturationModifier(12).build()));
-    public static final Item GRILLED_SAUSAGE = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(5).saturationModifier(6.8F).build()));
-    public static final Item GROUND_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(1.6F).build()));
-    public static final Item GROUND_MUTTON = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(1).build()));
-    public static final Item GROUND_PORK = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(1.6F).build()));
-    public static final Item KEBAB = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(4).saturationModifier(5.2F).build()));
-    public static final Item MEATBALL = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.4F).build()));
-    public static final Item MIXED_BBQ = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(14).saturationModifier(19).build()));
-    public static final Item MUTTON_BBQ = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(13).saturationModifier(12).build()));
-    public static final Item MUTTON_BURGER = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(4.5F).build()));
-    public static final Item PEPPERONI = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(8).saturationModifier(7.8F).build()));
-    public static final Item RAW_KEBAB = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.6F).build()));
-    public static final Item ROASTED_SALMON= new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(4).saturationModifier(2.4F).build()));
-    public static final Item SASHIMI= new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(2).saturationModifier(1.4F).build()));
-    public static final Item SAUSAGE= new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.6F).build()));
-    public static final Item SAUSAGE_BBQ= new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(12).saturationModifier(9).build()));
-    public static final Item STUFFED_CHICKEN = new Item(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(19).saturationModifier(16.7F).build()));
+    public static final Item BACON = food(4, 2);
+    public static final Item BBQ = food(15, 18);
+    public static final Item BURGER = food(2, 1.6F);
+    public static final Item COOKED_MEATBALL = food(2, 1);
+    public static final Item GRILLED_BACON = food(10, 11.5F);
+    public static final Item GRILLED_BURGER = food(7, 10);
+    public static final Item GRILLED_MUTTON_BURGER = food(8, 12);
+    public static final Item GRILLED_SAUSAGE = food(5, 6.8F);
+    public static final Item GROUND_MEAT = food(3, 1.6F);
+    public static final Item GROUND_MUTTON = food(2, 1);
+    public static final Item GROUND_PORK = food(3, 1.6F);
+    public static final Item KEBAB = food(4, 5.2F);
+    public static final Item MEATBALL = food(1, 0.4F);
+    public static final Item MIXED_BBQ = food(14, 16);
+    public static final Item MUTTON_BBQ = food(13, 12);
+    public static final Item MUTTON_BURGER = food(3, 4.5F);
+    public static final Item PEPPERONI = food(8, 7.8F);
+    public static final Item RAW_KEBAB = food(1, 0.6F);
+    public static final Item ROASTED_SALMON= food(4, 2.4F);
+    public static final Item SASHIMI= food(2, 1.4F);
+    public static final Item SAUSAGE= food(1, 0.6F);
+    public static final Item SAUSAGE_BBQ= food(12, 9);
+    public static final Item STUFFED_CHICKEN = food(19, 17.7F);
 
     //Drinks
-    public static final Item MILK_BOTTLE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(1).saturationModifier(1).alwaysEdible().build()));
-    public static final Item APPLE_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(6).saturationModifier(3).build()));
-    public static final Item BEETROOT_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(2).build()));
-    public static final Item BERRY_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(4).saturationModifier(1).build()));
-    public static final Item CACTUS_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(1).build()));
-    public static final Item CARROT_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(5).saturationModifier(4).build()));
-    public static final Item CHORUS_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(6).saturationModifier(3).alwaysEdible().build()));
-    public static final Item MELON_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(4).saturationModifier(4).build()));
-    public static final Item SEA_PICKLE_JUICE = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(3).saturationModifier(1).build()));
+    public static final Item MILK_BOTTLE = drink(1, 1);
+    public static final Item APPLE_JUICE = drink(6, 3);
+    public static final Item BEETROOT_JUICE = drink(3, 2);
+    public static final Item BERRY_JUICE = drink(4, 1);
+    public static final Item CACTUS_JUICE = drink(3, 1);
+    public static final Item CARROT_JUICE = drink(5, 4);
+    public static final Item CHORUS_JUICE = drink(6, 3);
+    public static final Item MELON_JUICE = drink(4, 4);
+    public static final Item SEA_PICKLE_JUICE = drink(3, 1);
 
 }
