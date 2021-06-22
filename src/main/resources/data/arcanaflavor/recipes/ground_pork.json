@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RR",
+    "RR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:porkchop"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:ground_pork",
+    "count": 4
+  }
+}

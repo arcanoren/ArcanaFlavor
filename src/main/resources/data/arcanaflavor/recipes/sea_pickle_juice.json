@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "SSS",
+    "BBB"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:sea_pickle"
+    },
+
+    "S": {
+      "item": "minecraft:sugar"
+    },
+
+    "B": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:sea_pickle_juice",
+    "count": 3
+  }
+}

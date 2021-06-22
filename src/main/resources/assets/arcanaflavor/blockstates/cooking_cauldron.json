@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arcanaflavor:block/cooking_cauldron"
+    }
+  }
+}

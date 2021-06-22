@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G",
+    "B",
+    "G"
+  ],
+  "key": {
+    "G": {
+      "item": "arcanaflavor:ground_pork"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:pepperoni",
+    "count": 2
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G",
+    "G",
+    "G"
+  ],
+  "key": {
+    "G": {
+      "item": "arcanaflavor:ground_pork"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:sausage",
+    "count": 6
+  }
+}

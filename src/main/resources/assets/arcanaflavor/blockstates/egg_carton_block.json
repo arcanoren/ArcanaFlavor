@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arcanaflavor:block/egg_carton_block"
+    }
+  }
+}

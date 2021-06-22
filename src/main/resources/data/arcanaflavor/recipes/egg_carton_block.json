@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E",
+    "E",
+    "E"
+  ],
+  "key": {
+    "E": {
+      "item": "arcanaflavor:egg_carton"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:egg_carton_block"
+  }
+}

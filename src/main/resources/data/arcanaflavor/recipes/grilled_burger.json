@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "arcanaflavor:burger"
+  },
+  "result": "arcanaflavor:grilled_burger",
+  "experience": 0.35,
+  "cookingtime": 200
+}

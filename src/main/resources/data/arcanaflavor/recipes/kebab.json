@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "arcanaflavor:raw_kebab"
+  },
+  "result": "arcanaflavor:kebab",
+  "experience": 0.35,
+  "cookingtime": 200
+}

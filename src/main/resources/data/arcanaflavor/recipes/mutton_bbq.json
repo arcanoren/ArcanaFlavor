@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_mutton"
+    },
+    {
+      "item": "arcanaflavor:cooked_carrot"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "arcanaflavor:mutton_bbq"
+  }
+}

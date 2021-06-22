@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GG",
+    "BE"
+  ],
+  "key": {
+    "G": {
+      "item": "arcanaflavor:ground_meat"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "B": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:meatball",
+    "count": 8
+  }
+}

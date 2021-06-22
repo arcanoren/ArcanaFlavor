@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "arcanaflavor:sausage"
+  },
+  "result": "arcanaflavor:pepperoni",
+  "experience": 0.35,
+  "cookingtime": 200
+}

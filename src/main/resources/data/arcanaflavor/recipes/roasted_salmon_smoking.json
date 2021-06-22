@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "arcanaflavor:sashimi"
+  },
+  "result": "arcanaflavor:roasted_salmon",
+  "experience": 0.35,
+  "cookingtime": 200
+}
