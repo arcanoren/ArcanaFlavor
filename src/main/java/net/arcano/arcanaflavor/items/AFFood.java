@@ -32,15 +32,17 @@ public class AFFood {
     public static final Item BEETROOT_PIE = food(7, 5.6F);
     public static final Item CHICKEN_PIE = food(11, 8);
     public static final Item CODFISH_PIE = food(7, 6);
+    public static final Item GLOW_BERRIES_PIE = food(6, 4);
     public static final Item MUSHROOM_PIE = food(8, 8);
-    public static final Item SWEET_BERRY_PIE = food(6, 4);
+    public static final Item SWEET_BERRIES_PIE = food(6, 4);
     public static final Item VEGETABLE_PIE = food(12, 5.7F);
     public static final Item WART_PIE = food(8, 4.8F);
 
     //Cookies
-    public static final Item BERRY_COOKIE = food(2, 0.4F);
     public static final Item CHOCOLATE_COOKIE = food(2, 0.4F);
     public static final Item HONEY_COOKIE = food(2, 0.4F);
+    public static final Item GLOW_BERRIES_COOKIE = food(2, 0.4F);
+    public static final Item SWEET_BERRIES_COOKIE = food(2, 0.4F);
 
     //Meat
     public static final Item BACON = food(4, 2);
@@ -71,11 +73,13 @@ public class AFFood {
     public static final Item MILK_BOTTLE = drink(1, 1);
     public static final Item APPLE_JUICE = drink(6, 3);
     public static final Item BEETROOT_JUICE = drink(3, 2);
-    public static final Item BERRY_JUICE = drink(4, 1);
     public static final Item CACTUS_JUICE = drink(3, 1);
     public static final Item CARROT_JUICE = drink(5, 4);
     public static final Item CHORUS_JUICE = drink(6, 3);
+    public static final Item GLOW_BERRIES_JUICE = drink(4, 1);
     public static final Item MELON_JUICE = drink(4, 4);
     public static final Item SEA_PICKLE_JUICE = drink(3, 1);
+    public static final Item SUGAR_CANE_JUICE = drink(3, 1);
+    public static final Item SWEET_BERRIES_JUICE = drink(4, 1);
 
 }

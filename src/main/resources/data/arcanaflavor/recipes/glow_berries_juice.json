@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "SSS",
+    "BBB"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:glow_berries"
+    },
+
+    "S": {
+      "item": "minecraft:sugar"
+    },
+
+    "B": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:glow_berries_juice",
+    "count": 3
+  }
+}

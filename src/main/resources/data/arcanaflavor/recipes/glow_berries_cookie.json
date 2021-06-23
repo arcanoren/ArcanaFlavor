@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WBW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "B": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:glow_berries_cookie",
+    "count": 16
+  }
+}

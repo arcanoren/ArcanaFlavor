@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "arcanaflavor:items/berry_pie"
+    "layer0": "arcanaflavor:items/sugar_cane_juice"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "BBB"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sugar_cane"
+    },
+
+    "B": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "arcanaflavor:sugar_cane_juice",
+    "count": 3
+  }
+}

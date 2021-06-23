@@ -62,15 +62,17 @@ public class AFItems {
         verifyCustomFoodsRegistry("beetroot_pie", AFFood.BEETROOT_PIE);
         verifyCustomFoodsRegistry("chicken_pie", AFFood.CHICKEN_PIE);
         verifyCustomFoodsRegistry("codfish_pie", AFFood.CODFISH_PIE);
+        verifyCustomFoodsRegistry("glow_berries_pie", AFFood.GLOW_BERRIES_PIE);
         verifyCustomFoodsRegistry("mushroom_pie", AFFood.MUSHROOM_PIE);
-        verifyCustomFoodsRegistry("sweet_berry_pie", AFFood.SWEET_BERRY_PIE);
+        verifyCustomFoodsRegistry("sweet_berries_pie", AFFood.SWEET_BERRIES_PIE);
         verifyCustomFoodsRegistry("vegetable_pie", AFFood.VEGETABLE_PIE);
         verifyCustomFoodsRegistry("wart_pie", AFFood.WART_PIE);
 
         //Cookies
-        verifyCustomFoodsRegistry("berry_cookie", AFFood.BERRY_COOKIE);
         verifyCustomFoodsRegistry("chocolate_cookie", AFFood.CHOCOLATE_COOKIE);
         verifyCustomFoodsRegistry("honey_cookie", AFFood.HONEY_COOKIE);
+        verifyCustomFoodsRegistry("glow_berries_cookie", AFFood.GLOW_BERRIES_COOKIE);
+        verifyCustomFoodsRegistry("sweet_berries_cookie", AFFood.SWEET_BERRIES_COOKIE);
 
         //Meat
         verifyCustomFoodsRegistry("bacon", AFFood.BACON);
@@ -101,12 +103,14 @@ public class AFItems {
         verifyCustomFoodsRegistry("milk_bottle", AFFood.MILK_BOTTLE);
         verifyCustomFoodsRegistry("apple_juice", AFFood.APPLE_JUICE);
         verifyCustomFoodsRegistry("beetroot_juice", AFFood.BEETROOT_JUICE);
-        verifyCustomFoodsRegistry("berry_juice", AFFood.BERRY_JUICE);
         verifyCustomFoodsRegistry("cactus_juice", AFFood.CACTUS_JUICE);
         verifyCustomFoodsRegistry("carrot_juice", AFFood.CARROT_JUICE);
         verifyCustomFoodsRegistry("chorus_juice", AFFood.CHORUS_JUICE);
+        verifyCustomFoodsRegistry("glow_berries_juice", AFFood.GLOW_BERRIES_JUICE);
         verifyCustomFoodsRegistry("melon_juice", AFFood.MELON_JUICE);
         verifyCustomFoodsRegistry("sea_pickle_juice", AFFood.SEA_PICKLE_JUICE);
+        verifyCustomFoodsRegistry("sugar_cane_juice", AFFood.SUGAR_CANE_JUICE);
+        verifyCustomFoodsRegistry("sweet_berries_juice", AFFood.SWEET_BERRIES_JUICE);
 
         /* *Items* */
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "egg_carton"), AFItem.EGG_CARTON);
