@@ -1,41 +1,17 @@
 package net.arcano.arcanaflavor.registry;
 
-import me.shedaniel.autoconfig.AutoConfig;
 import net.arcano.arcanaflavor.ArcanaFlavor;
-import net.arcano.arcanaflavor.base.BaseFood;
-import net.arcano.arcanaflavor.config.AFConfig;
-import net.arcano.arcanaflavor.items.AFDrinkable;
 import net.arcano.arcanaflavor.items.AFFood;
 import net.arcano.arcanaflavor.items.AFItem;
-import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class AFItems {
 
-    public static void verifyCustomFoodsRegistry(String name, Item item){
-        BaseFood food = new BaseFood();
-        ArcanaFlavor.CONFIG.parseJson(name, food);
-
-        if (food.name != null && food.name.contains("_custom")) {
-            if(food.name.contains("juice") || food.name.contains("bottle")){
-                item = new AFDrinkable(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder()
-                        .hunger(food.hunger).saturationModifier(food.saturation).alwaysEdible().build()));
-            }else {
-                item = new Item(new Item.Settings().group(ItemGroup.FOOD)
-                        .food(new FoodComponent.Builder().hunger(food.hunger).saturationModifier(food.saturation).build()));
-            }
-
-            System.out.println(name + " values replaced!");
-        }
-
+    public static void itemRegistry(String name, Item item){
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, name), item);
     }
 
@@ -49,68 +25,68 @@ public class AFItems {
         /* *Foods* */
 
         //Raw
-        verifyCustomFoodsRegistry("pumpkin_slice", AFFood.PUMPKIN_SLICE);
+        itemRegistry("pumpkin_slice", AFFood.PUMPKIN_SLICE);
 
         //Cooked
-        verifyCustomFoodsRegistry("cooked_apple", AFFood.COOKED_APPLE);
-        verifyCustomFoodsRegistry("cooked_beetroot", AFFood.COOKED_BEETROOT);
-        verifyCustomFoodsRegistry("cooked_carrot", AFFood.COOKED_CARROT);
-        verifyCustomFoodsRegistry("cooked_pumpkin_slice", AFFood.COOKED_PUMPKIN_SLICE);
+        itemRegistry("cooked_apple", AFFood.COOKED_APPLE);
+        itemRegistry("cooked_beetroot", AFFood.COOKED_BEETROOT);
+        itemRegistry("cooked_carrot", AFFood.COOKED_CARROT);
+        itemRegistry("cooked_pumpkin_slice", AFFood.COOKED_PUMPKIN_SLICE);
 
         //Pies
-        verifyCustomFoodsRegistry("apple_pie", AFFood.APPLE_PIE);
-        verifyCustomFoodsRegistry("beetroot_pie", AFFood.BEETROOT_PIE);
-        verifyCustomFoodsRegistry("chicken_pie", AFFood.CHICKEN_PIE);
-        verifyCustomFoodsRegistry("codfish_pie", AFFood.CODFISH_PIE);
-        verifyCustomFoodsRegistry("glow_berries_pie", AFFood.GLOW_BERRIES_PIE);
-        verifyCustomFoodsRegistry("mushroom_pie", AFFood.MUSHROOM_PIE);
-        verifyCustomFoodsRegistry("sweet_berries_pie", AFFood.SWEET_BERRIES_PIE);
-        verifyCustomFoodsRegistry("vegetable_pie", AFFood.VEGETABLE_PIE);
-        verifyCustomFoodsRegistry("wart_pie", AFFood.WART_PIE);
+        itemRegistry("apple_pie", AFFood.APPLE_PIE);
+        itemRegistry("beetroot_pie", AFFood.BEETROOT_PIE);
+        itemRegistry("chicken_pie", AFFood.CHICKEN_PIE);
+        itemRegistry("codfish_pie", AFFood.CODFISH_PIE);
+        itemRegistry("glow_berries_pie", AFFood.GLOW_BERRIES_PIE);
+        itemRegistry("mushroom_pie", AFFood.MUSHROOM_PIE);
+        itemRegistry("sweet_berries_pie", AFFood.SWEET_BERRIES_PIE);
+        itemRegistry("vegetable_pie", AFFood.VEGETABLE_PIE);
+        itemRegistry("wart_pie", AFFood.WART_PIE);
 
         //Cookies
-        verifyCustomFoodsRegistry("chocolate_cookie", AFFood.CHOCOLATE_COOKIE);
-        verifyCustomFoodsRegistry("honey_cookie", AFFood.HONEY_COOKIE);
-        verifyCustomFoodsRegistry("glow_berries_cookie", AFFood.GLOW_BERRIES_COOKIE);
-        verifyCustomFoodsRegistry("sweet_berries_cookie", AFFood.SWEET_BERRIES_COOKIE);
+        itemRegistry("chocolate_cookie", AFFood.CHOCOLATE_COOKIE);
+        itemRegistry("honey_cookie", AFFood.HONEY_COOKIE);
+        itemRegistry("glow_berries_cookie", AFFood.GLOW_BERRIES_COOKIE);
+        itemRegistry("sweet_berries_cookie", AFFood.SWEET_BERRIES_COOKIE);
 
         //Meat
-        verifyCustomFoodsRegistry("bacon", AFFood.BACON);
-        verifyCustomFoodsRegistry("bbq", AFFood.BBQ);
-        verifyCustomFoodsRegistry("burger", AFFood.BURGER);
-        verifyCustomFoodsRegistry("cooked_meatball", AFFood.COOKED_MEATBALL);
-        verifyCustomFoodsRegistry("grilled_bacon", AFFood.GRILLED_BACON);
-        verifyCustomFoodsRegistry("grilled_burger", AFFood.GRILLED_BURGER);
-        verifyCustomFoodsRegistry("grilled_mutton_burger", AFFood.GRILLED_MUTTON_BURGER);
-        verifyCustomFoodsRegistry("grilled_sausage", AFFood.GRILLED_SAUSAGE);
-        verifyCustomFoodsRegistry("ground_meat", AFFood.GROUND_MEAT);
-        verifyCustomFoodsRegistry("ground_mutton", AFFood.GROUND_MUTTON);
-        verifyCustomFoodsRegistry("ground_pork", AFFood.GROUND_PORK);
-        verifyCustomFoodsRegistry("kebab", AFFood.KEBAB);
-        verifyCustomFoodsRegistry("meatball", AFFood.MEATBALL);
-        verifyCustomFoodsRegistry("mixed_bbq", AFFood.MIXED_BBQ);
-        verifyCustomFoodsRegistry("mutton_bbq", AFFood.MUTTON_BBQ);
-        verifyCustomFoodsRegistry("mutton_burger", AFFood.MUTTON_BURGER);
-        verifyCustomFoodsRegistry("pepperoni", AFFood.PEPPERONI);
-        verifyCustomFoodsRegistry("raw_kebab", AFFood.RAW_KEBAB);
-        verifyCustomFoodsRegistry("roasted_salmon", AFFood.ROASTED_SALMON);
-        verifyCustomFoodsRegistry("sashimi", AFFood.SASHIMI);
-        verifyCustomFoodsRegistry("sausage", AFFood.SAUSAGE);
-        verifyCustomFoodsRegistry("sausage_bbq", AFFood.SAUSAGE_BBQ);
-        verifyCustomFoodsRegistry("stuffed_chicken", AFFood.STUFFED_CHICKEN);
+        itemRegistry("bacon", AFFood.BACON);
+        itemRegistry("bbq", AFFood.BBQ);
+        itemRegistry("burger", AFFood.BURGER);
+        itemRegistry("cooked_meatball", AFFood.COOKED_MEATBALL);
+        itemRegistry("grilled_bacon", AFFood.GRILLED_BACON);
+        itemRegistry("grilled_burger", AFFood.GRILLED_BURGER);
+        itemRegistry("grilled_mutton_burger", AFFood.GRILLED_MUTTON_BURGER);
+        itemRegistry("grilled_sausage", AFFood.GRILLED_SAUSAGE);
+        itemRegistry("ground_meat", AFFood.GROUND_MEAT);
+        itemRegistry("ground_mutton", AFFood.GROUND_MUTTON);
+        itemRegistry("ground_pork", AFFood.GROUND_PORK);
+        itemRegistry("kebab", AFFood.KEBAB);
+        itemRegistry("meatball", AFFood.MEATBALL);
+        itemRegistry("mixed_bbq", AFFood.MIXED_BBQ);
+        itemRegistry("mutton_bbq", AFFood.MUTTON_BBQ);
+        itemRegistry("mutton_burger", AFFood.MUTTON_BURGER);
+        itemRegistry("pepperoni", AFFood.PEPPERONI);
+        itemRegistry("raw_kebab", AFFood.RAW_KEBAB);
+        itemRegistry("roasted_salmon", AFFood.ROASTED_SALMON);
+        itemRegistry("sashimi", AFFood.SASHIMI);
+        itemRegistry("sausage", AFFood.SAUSAGE);
+        itemRegistry("sausage_bbq", AFFood.SAUSAGE_BBQ);
+        itemRegistry("stuffed_chicken", AFFood.STUFFED_CHICKEN);
 
         //Drinks
-        verifyCustomFoodsRegistry("milk_bottle", AFFood.MILK_BOTTLE);
-        verifyCustomFoodsRegistry("apple_juice", AFFood.APPLE_JUICE);
-        verifyCustomFoodsRegistry("beetroot_juice", AFFood.BEETROOT_JUICE);
-        verifyCustomFoodsRegistry("cactus_juice", AFFood.CACTUS_JUICE);
-        verifyCustomFoodsRegistry("carrot_juice", AFFood.CARROT_JUICE);
-        verifyCustomFoodsRegistry("chorus_juice", AFFood.CHORUS_JUICE);
-        verifyCustomFoodsRegistry("glow_berries_juice", AFFood.GLOW_BERRIES_JUICE);
-        verifyCustomFoodsRegistry("melon_juice", AFFood.MELON_JUICE);
-        verifyCustomFoodsRegistry("sea_pickle_juice", AFFood.SEA_PICKLE_JUICE);
-        verifyCustomFoodsRegistry("sugar_cane_juice", AFFood.SUGAR_CANE_JUICE);
-        verifyCustomFoodsRegistry("sweet_berries_juice", AFFood.SWEET_BERRIES_JUICE);
+        itemRegistry("milk_bottle", AFFood.MILK_BOTTLE);
+        itemRegistry("apple_juice", AFFood.APPLE_JUICE);
+        itemRegistry("beetroot_juice", AFFood.BEETROOT_JUICE);
+        itemRegistry("cactus_juice", AFFood.CACTUS_JUICE);
+        itemRegistry("carrot_juice", AFFood.CARROT_JUICE);
+        itemRegistry("chorus_juice", AFFood.CHORUS_JUICE);
+        itemRegistry("glow_berries_juice", AFFood.GLOW_BERRIES_JUICE);
+        itemRegistry("melon_juice", AFFood.MELON_JUICE);
+        itemRegistry("sea_pickle_juice", AFFood.SEA_PICKLE_JUICE);
+        itemRegistry("sugar_cane_juice", AFFood.SUGAR_CANE_JUICE);
+        itemRegistry("sweet_berries_juice", AFFood.SWEET_BERRIES_JUICE);
 
         /* *Items* */
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "egg_carton"), AFItem.EGG_CARTON);
