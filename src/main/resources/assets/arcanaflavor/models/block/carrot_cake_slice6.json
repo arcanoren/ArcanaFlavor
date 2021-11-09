@@ -1,0 +1,22 @@
+{
+  "textures": {
+    "particle": "arcanaflavor:blocks/carrot_cake_side",
+    "bottom": "arcanaflavor:blocks/carrot_cake_bottom",
+    "top": "arcanaflavor:blocks/carrot_cake_top",
+    "side": "arcanaflavor:blocks/carrot_cake_side",
+    "inside": "arcanaflavor:blocks/carrot_cake_inner"
+  },
+  "elements": [
+    {   "from": [ 13, 0, 1 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#inside" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

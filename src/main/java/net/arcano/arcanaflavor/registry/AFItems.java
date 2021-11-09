@@ -19,6 +19,7 @@ public class AFItems {
     //Block Items Init
     public static final BlockItem COOKING_CAULDRON = new BlockItem(AFBlocks.COOKING_CAULDRON, new Item.Settings().group(ItemGroup.DECORATIONS));
     public static final BlockItem EGG_CARTON_BLOCK = new BlockItem(AFBlocks.EGG_CARTON_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS));
+    public static final BlockItem CARROT_CAKE = new BlockItem(AFBlocks.CARROT_CAKE_BLOCK, new Item.Settings().maxCount(1).group(ItemGroup.FOOD));
 
     public static void registerItems(){
 
@@ -95,5 +96,6 @@ public class AFItems {
         /* *Block Items* */
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "cooking_cauldron"), COOKING_CAULDRON);
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "egg_carton_block"), EGG_CARTON_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, "carrot_cake"), CARROT_CAKE);
     }
 }

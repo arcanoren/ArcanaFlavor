@@ -60,5 +60,8 @@
   "item.arcanaflavor.egg_carton": "Egg Carton",
   "block.arcanaflavor.egg_carton_block": "Egg Carton Block",
 
+  "item.arcanaflavor.carrot_cake": "Carrot Cake",
+  "block.arcanaflavor.carrot_cake_block": "Carrot Cake",
+
   "block.arcanaflavor.cooking_cauldron": "Cooking Cauldron"
 }

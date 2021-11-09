@@ -60,5 +60,8 @@
   "item.arcanaflavor.egg_carton": "Cartela de ovos",
   "block.arcanaflavor.egg_carton_block": "Bloco de cartelas de ovos",
 
-  "block.arcanaflavor.cooking_cauldron": "Caldeirão de Cozinha"
+  "item.arcanaflavor.carrot_cake": "Bolo de cenoura",
+  "block.arcanaflavor.carrot_cake_block": "Bolo de cenoura",
+
+  "block.arcanaflavor.cooking_cauldron": "Caldeirão de cozinha"
 }

@@ -1,4 +1,4 @@
-package net.arcano.arcanaflavor.items;
+package net.arcano.arcanaflavor.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
