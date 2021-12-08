@@ -17,7 +17,7 @@ In the customFood:[ ] field add the id of thw food you want edit, such as hunger
 
 {
 
-    customFood:[
+    [
         {
             "name":"food_id",
             "hunger": 2,  //new hunger value

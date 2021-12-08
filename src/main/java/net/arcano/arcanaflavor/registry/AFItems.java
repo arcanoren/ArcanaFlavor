@@ -1,6 +1,8 @@
 package net.arcano.arcanaflavor.registry;
 
 import net.arcano.arcanaflavor.ArcanaFlavor;
+import net.arcano.arcanaflavor.base.BaseFood;
+import net.arcano.arcanaflavor.config.JsonGenerator;
 import net.arcano.arcanaflavor.items.AFFood;
 import net.arcano.arcanaflavor.items.AFItem;
 import net.minecraft.item.BlockItem;
@@ -9,9 +11,32 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class AFItems {
+    //Carregar Lista de comidas customizadas
+    static List<BaseFood> customFoods = Arrays.asList(JsonGenerator.readConfig());
+    //static BaseFood[] customFoods = JsonGenerator.readConfig();
+
 
     public static void itemRegistry(String name, Item item){
+        for(BaseFood food : customFoods){
+            //Comparar se variável foi alterada
+            if(food.name != null && food.name.equals(name)){
+                //Se sim, substiruir por nova comida
+                if(food.name.contains("juice") || food.name.contains("bottle")){
+                    item = AFFood.customDrink(food.hunger, food.saturation);
+                }else{
+                    item = AFFood.customFood(food.hunger, food.saturation);
+                }
+
+                System.out.println(food.name + " values replaced.");
+
+                //customFoods.remove(food);
+            }
+        }
+
         Registry.register(Registry.ITEM, new Identifier(ArcanaFlavor.MOD_ID, name), item);
     }
 

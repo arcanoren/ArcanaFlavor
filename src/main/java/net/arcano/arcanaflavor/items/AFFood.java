@@ -18,6 +18,14 @@ public class AFFood {
                 .food(new FoodComponent.Builder().hunger(hunger).saturationModifier(saturation).build()));
     }
 
+    public static Item customFood(int hunger, float saturation){
+        return food(hunger, saturation);
+    }
+
+    public static Item customDrink(int hunger, float saturation){
+        return drink(hunger, saturation);
+    }
+
     //Raw
     public static final Item PUMPKIN_SLICE = food(1, 1);
 

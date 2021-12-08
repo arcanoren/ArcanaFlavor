@@ -10,6 +10,7 @@ public class ArcanaFlavor implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
         AFItems.registerItems();
         AFBlocks.registerBlocks();
     }
